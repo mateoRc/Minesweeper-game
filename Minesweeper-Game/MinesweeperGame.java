@@ -69,24 +69,6 @@ public class MinesweeperGame extends Game {
             }
         }
         gameObject.countMineNeighbors = count;
-        /* long version
-        //left
-        if (isValid (row - 1, column) && gameField[row - 1][column].isMine ) count++;
-        //right
-        if (isValid(row + 1, column) && gameField[row + 1][column].isMine) count++;
-        //bottom
-        if (isValid(row, column - 1) && gameField[row][column - 1].isMine) count++;
-        //top
-        if (isValid(row, column + 1) && gameField[row][column + 1].isMine) count++;
-        //top-left
-        if (isValid(row - 1, column - 1) && gameField[row - 1][column - 1].isMine) count++;
-        //bottom- right
-        if (isValid(row + 1, column + 1) && gameField[row + 1][column + 1].isMine) count++;
-        //bottom-left
-        if (isValid(row - 1, column + 1) && gameField[row - 1][column + 1].isMine) count++;
-        //top-right
-        if (isValid(row + 1, column - 1) && gameField[row + 1][column - 1].isMine) count++;
-        */
     }
 
     private void openTile(int x, int y) {
